@@ -43,7 +43,7 @@ The platform enables businesses to capture customer enquiries, automatically qua
 
 ### Homepage
 
-![Homepage](assets/screenshots/homepage.png)
+![Homepage](assets/screenshots/home-page.png)
 
 ### Lead Capture
 
