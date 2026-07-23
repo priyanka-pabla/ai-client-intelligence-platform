@@ -567,21 +567,48 @@ if admin_mode:
         leads_df = pd.read_csv("data/leads.csv")
 
         # Ensure Version 2 columns exist
-        required_columns = {
-            "Predicted Conversion": 0,
-            "Conversion Probability": 0.0,
-            "Conversion Percentage": 0.0,
-            "Lead Score": "Cold Lead",
-            "Lead Status": "New",
-            "Budget": None,
-            "Industry": "Not Provided",
-            "Company Size": 0,
-            "Timeline": "Not Provided"
-        }
+        version_2_columns = [
+            "Submitted At",
+            "Company",
+            "Name",
+            "Email",
+            "Phone",
+            "Service",
+            "Industry",
+            "Company Size",
+            "Budget",
+            "Timeline",
+            "Message",
+            "Predicted Conversion",
+            "Conversion Probability",
+            "Conversion Percentage",
+            "Lead Score",
+            "Lead Status"
+        ]
 
-        for column, default_value in required_columns.items():
-            if column not in leads_df.columns:
-                leads_df[column] = default_value
+        missing_columns = [
+            column
+            for column in version_2_columns
+            if column not in leads_df.columns
+        ]
+
+        if missing_columns:
+            leads_df.to_csv(
+                "data/leads_v1_backup.csv",
+                index=False
+            )
+
+            leads_df = pd.DataFrame(
+                columns=version_2_columns
+            )
+
+            leads_df.to_csv(
+                "data/leads.csv",
+                index=False
+            )
+        
+        if leads_df.empty:
+            st.info("No leads available yet.")
 
         leads_df["Submitted DateTime"] = leads_df["Submitted At"].apply(parse_submitted_at)
 
