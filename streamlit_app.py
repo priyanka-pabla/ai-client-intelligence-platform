@@ -9,6 +9,7 @@ from openai import OpenAI
 from datetime import datetime
 import smtplib
 from email.message import EmailMessage
+from utils.predict_conversion import predict_conversion
 
 client = OpenAI()
 
@@ -226,6 +227,7 @@ def send_email(to_email, subject, text_body, html_body=None):
 
 
 with st.form("lead_form"):
+
     company = st.text_input("Company Name")
     name = st.text_input("Your Name")
     email = st.text_input("Email")
@@ -241,9 +243,64 @@ with st.form("lead_form"):
         ]
     )
 
-    message = st.text_area("Tell us about your project")
+    industry = st.selectbox(
+        "Industry",
+        [
+            "Healthcare",
+            "Education",
+            "Retail",
+            "E-commerce",
+            "Manufacturing",
+            "Real Estate",
+            "Food and Hospitality",
+            "Professional Services",
+            "Accounting and Finance",
+            "Human Resources",
+            "Cleaning and Facility Services",
+            "Logistics and Transportation",
+            "Other"
+        ]
+    )
 
-    submitted = st.form_submit_button("🚀 Get Started")
+    company_size = st.number_input(
+        "Company Size",
+        min_value=1,
+        max_value=10000,
+        value=10,
+        step=1,
+        help="Enter the approximate number of employees."
+    )
+
+    budget_input = st.number_input(
+        "Estimated Budget in AED (Optional)",
+        min_value=0,
+        max_value=1000000,
+        value=0,
+        step=500,
+        help="Leave this as 0 if you prefer not to disclose a budget."
+    )
+
+    timeline = st.selectbox(
+        "Project Timeline",
+        [
+            "ASAP / Immediately",
+            "Within 2 weeks",
+            "Within 1 month",
+            "Within 3 months"
+        ]
+    )
+
+    message = st.text_area(
+        "Tell us about your project",
+        placeholder=(
+            "Describe your requirements, preferred communication method, "
+            "pricing questions, or whether you would like a call."
+        )
+    )
+
+    submitted = st.form_submit_button(
+        "🚀 Get Started"
+    )
 
 
 
@@ -252,11 +309,37 @@ with st.form("lead_form"):
 
 if submitted:
 
-    if not company or not name or not email or not phone or not message:
-        st.warning("Please fill in all fields before submitting.")
+    if (
+    not company
+    or not name
+    or not email
+    or not phone
+    or not message
+    or industry == "Select Industry"
+    ):
+        st.warning("Please fill in all fields and select an industry before submitting.")
 
     else:
-        lead_score = calculate_lead_score(message, service)
+        budget = None if budget_input == 0 else float(budget_input)
+
+        prediction_result = predict_conversion(
+            service=service,
+            industry=industry,
+            company_size=int(company_size),
+            budget=budget,
+            timeline=timeline,
+            message=message
+        )
+
+        conversion_probability = prediction_result["conversion_probability"]
+        conversion_percentage = prediction_result["conversion_percentage"]
+        predicted_conversion = prediction_result["predicted_conversion"]
+
+        ml_lead_score = prediction_result["lead_score"]
+
+        lead_score = f"{ml_lead_score} Lead"
+
+
 
         submitted_at = datetime.now().strftime("%d-%m-%Y %I:%M %p")
 
@@ -276,7 +359,17 @@ if submitted:
             "Email": email,
             "Phone": phone,
             "Service": service,
+            "Industry": industry,
+            "Company Size": int(company_size),
+            "Budget": budget,
+            "Timeline": timeline,
             "Message": message,
+            "Predicted Conversion": predicted_conversion,
+            "Conversion Probability": round(
+                conversion_probability,
+                4
+            ),
+            "Conversion Percentage": conversion_percentage,
             "Lead Score": lead_score,
             "Lead Status": "New"
         }
@@ -479,19 +572,14 @@ if admin_mode:
             "%d-%m-%Y %I:%M %p"
         )
 
-        leads_df["Lead Score"] = leads_df.apply(
-            lambda row: calculate_lead_score(
-                row["Message"],
-                row["Service"]
-            ),
-            axis=1
-        )
+        # leads_df["Lead Score"] = leads_df.apply(
+        #     lambda row: calculate_lead_score(
+        #         row["Message"],
+        #         row["Service"]
+        #     ),
+        #     axis=1
+        # )
         
-        leads_df["Submitted DateTime"] = leads_df["Submitted At"].apply(parse_submitted_at)
-
-        leads_df["Submitted At"] = leads_df["Submitted DateTime"].dt.strftime(
-            "%d-%m-%Y %I:%M %p"
-        )
 
         total_leads = len(leads_df)
         hot_leads = len(leads_df[leads_df["Lead Score"] == "Hot Lead"])
@@ -504,9 +592,21 @@ if admin_mode:
         col3.metric("Warm Leads", warm_leads)
         col4.metric("Cold Leads", cold_leads)
 
-        conversion_rate = round((hot_leads / total_leads) * 100, 1) if total_leads > 0 else 0
+        average_conversion_score = pd.to_numeric(
+            leads_df["Conversion Percentage"],
+            errors="coerce"
+        ).mean()
 
-        st.success(f"🎯 High-Priority Leads: {conversion_rate}%")
+        average_conversion_score = (
+            round(average_conversion_score, 2)
+            if pd.notna(average_conversion_score)
+            else 0
+        )
+
+        st.success(
+            f"🤖 Average ML Conversion Probability: {average_conversion_score:.2f}%"
+        )
+
 
         st.markdown("### 📈 Lead Analytics")
 
@@ -688,6 +788,7 @@ if admin_mode:
 
         st.markdown("### 🧾 Leads CRM")
 
+
         def highlight_status(row):
             status = row["Lead Status"]
 
@@ -706,58 +807,76 @@ if admin_mode:
             elif status == "Lost":
                 return ["background-color: #fee2e2"] * len(row)
 
-            else:
-                return [""] * len(row)
+            return [""] * len(row)
 
-            #Create reply countdown
+
+        # Create reply countdown
         filtered_df["Reply Time Left"] = filtered_df.apply(
-                calculate_reply_deadline,
-                axis=1
-            )
+            calculate_reply_deadline,
+            axis=1
+        )
 
-            # Status priority order
+        # Status priority order
         status_order = {
-                "New": 1,
-                "Contacted": 2,
-                "Proposal Sent": 3,
-                "Won": 4,
-                "Lost": 5
-            }
+            "New": 1,
+            "Contacted": 2,
+            "Proposal Sent": 3,
+            "Won": 4,
+            "Lost": 5
+        }
 
-        filtered_df["Status Order"] = filtered_df["Lead Status"].map(status_order)
+        filtered_df["Status Order"] = filtered_df[
+            "Lead Status"
+        ].map(status_order)
 
-            # Sort active leads first, oldest first
+        # Sort active leads first, oldest first
         display_df = filtered_df.sort_values(
-                by=["Status Order", "Submitted DateTime"],
-                ascending=[True, True]
-            )
+            by=["Status Order", "Submitted DateTime"],
+            ascending=[True, True]
+        )
 
-            # Hide helper columns only if they exist
+        # Hide helper columns
         display_df = display_df.drop(
-                columns=["Status Order", "Submitted DateTime"],
-                errors="ignore"
-            )
-        
+            columns=["Status Order", "Submitted DateTime"],
+            errors="ignore"
+        )
 
+        # Keep Budget numeric for Streamlit and PyArrow
+        # Format Budget column for display
+        display_df["Budget"] = display_df["Budget"].apply(
+            lambda value: (
+                "Not Provided"
+                if pd.isna(value)
+                or value is None
+                or str(value).strip().lower() in ["none", "nan", ""]
+                else f"AED {float(value):,.0f}"
+            )
+        )
+
+        # Add display-only Lead ID
         display_df.insert(
             0,
             "Lead ID",
-            [f"LD-{i:03}" for i in range(1, len(display_df) + 1)]
+            [
+                f"LD-{i:03}"
+                for i in range(1, len(display_df) + 1)
+            ]
         )
 
-
-        styled_df = display_df.style.apply(
+        # Apply row colours
+        styled_df = (
+            display_df.style
+            .apply(
                 highlight_status,
                 axis=1
             )
+        )
 
         st.dataframe(
-                styled_df,
-                use_container_width=True,
-                hide_index=True
-            )
-      
-
+            styled_df,
+            use_container_width=True,
+            hide_index=True
+        )
 
 
         st.markdown("### 🤖 AI Follow-Up Email Generator")

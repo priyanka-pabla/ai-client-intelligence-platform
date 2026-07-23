@@ -1,0 +1,32 @@
+{
+    "market_name": "Dubai SME Market",
+    "description": "Synthetic lead-volume assumptions for the Dubai SME market.",
+
+    "default_weight": 1,
+
+    "persona_weights": {
+        "CHATBOT_001": 6,
+        "CHATBOT_002": 6,
+        "CHATBOT_003": 5,
+        "CHATBOT_004": 4,
+        "CHATBOT_005": 4,
+
+        "AUTOMATION_001": 5,
+        "AUTOMATION_002": 4,
+        "AUTOMATION_003": 5,
+        "AUTOMATION_004": 6,
+        "AUTOMATION_005": 5,
+
+        "DASHBOARD_001": 4,
+        "DASHBOARD_002": 4,
+        "DASHBOARD_003": 4,
+        "DASHBOARD_004": 4,
+        "DASHBOARD_005": 4,
+
+        "WEBSITE_001": 6,
+        "WEBSITE_002": 5,
+        "WEBSITE_003": 7,
+        "WEBSITE_004": 5,
+        "WEBSITE_005": 7
+    }
+}

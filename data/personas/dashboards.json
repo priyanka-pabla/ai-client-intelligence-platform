@@ -1,0 +1,776 @@
+[
+  {
+    "persona_id": "DASHBOARD_001",
+    "persona_name": "Retail Chain Operations Manager",
+    "service": "Data Dashboards",
+    "industry": "Retail",
+
+    "company_size": {
+      "min_employees": 30,
+      "max_employees": 250
+    },
+
+    "decision_makers": [
+      "Operations Manager",
+      "Retail Director",
+      "Business Owner",
+      "Regional Manager"
+    ],
+
+    "technical_maturity": "Medium",
+
+    "business_challenges": [
+      "Sales information is spread across multiple branches",
+      "Managers prepare reports manually in spreadsheets",
+      "Inventory performance is difficult to monitor",
+      "Branch performance cannot be compared quickly"
+    ],
+
+    "business_goals": [
+      "Monitor sales performance in real time",
+      "Compare performance across branches",
+      "Track inventory and product demand",
+      "Reduce manual reporting",
+      "Identify underperforming stores"
+    ],
+
+    "required_features": [
+      "Sales Performance Dashboard",
+      "Branch Comparison",
+      "Inventory Monitoring",
+      "Product Performance Analysis",
+      "Automated Report Updates"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 10000,
+      "max": 28000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "Microsoft Teams"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Performance-focused",
+      "Analytical"
+    ],
+
+    "keywords": [
+      "sales",
+      "retail",
+      "branches",
+      "inventory",
+      "products",
+      "performance",
+      "dashboard"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.48,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "UrbanMart Retail",
+      "Everyday Stores UAE",
+      "PrimeChoice Retail Group",
+      "CityBasket Stores",
+      "SmartBuy Retail",
+      "MetroShop Group",
+      "ValuePoint Stores"
+    ],
+
+    "sample_contact_names": [
+      "Ahmed Khalid",
+      "Sara Rahman",
+      "Omar Hassan",
+      "Nadia Malik",
+      "Yousef Farooq",
+      "Mariam Saeed",
+      "Rami Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 30,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our retail group is considering",
+          "We are researching options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our operations team would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 25,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "comparing sales across several retail branches",
+      "tracking inventory levels across stores",
+      "preparing weekly sales reports manually",
+      "identifying underperforming products",
+      "monitoring branch performance in real time"
+    ],
+
+    "message_solutions": [
+      "a retail sales dashboard",
+      "a branch-performance analytics dashboard",
+      "an inventory-monitoring dashboard",
+      "a product-performance reporting dashboard",
+      "a centralized retail analytics solution"
+    ]
+  },
+
+  {
+    "persona_id": "DASHBOARD_002",
+    "persona_name": "Healthcare Group Administrator",
+    "service": "Data Dashboards",
+    "industry": "Healthcare",
+
+    "company_size": {
+      "min_employees": 20,
+      "max_employees": 180
+    },
+
+    "decision_makers": [
+      "Healthcare Administrator",
+      "Clinic Director",
+      "Operations Manager",
+      "Medical Group Owner"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "Patient and appointment data is stored in different systems",
+      "Clinic managers prepare reports manually",
+      "Appointment cancellations are difficult to analyse",
+      "Performance across clinic locations is unclear"
+    ],
+
+    "business_goals": [
+      "Monitor patient and appointment trends",
+      "Compare clinic performance",
+      "Track cancellations and no-shows",
+      "Improve staff and resource planning",
+      "Reduce manual reporting"
+    ],
+
+    "required_features": [
+      "Appointment Analytics",
+      "Patient Volume Dashboard",
+      "Clinic Comparison",
+      "Cancellation and No-show Tracking",
+      "Revenue Performance Monitoring"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 12000,
+      "max": 32000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "Microsoft Teams"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Data-conscious",
+      "Operations-focused"
+    ],
+
+    "keywords": [
+      "patients",
+      "appointments",
+      "clinics",
+      "no-shows",
+      "revenue",
+      "healthcare",
+      "analytics"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.50,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "HealthFirst Medical Group",
+      "PrimeCare Clinics",
+      "New Life Healthcare",
+      "Wellness Medical Network",
+      "CarePoint Clinics",
+      "MedStar Healthcare Group",
+      "CityHealth Medical Centres"
+    ],
+
+    "sample_contact_names": [
+      "Dr. Sarah Malik",
+      "Ahmed Rahman",
+      "Fatima Noor",
+      "Omar Khalid",
+      "Mariam Hassan",
+      "Nadia Saeed",
+      "Yousef Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 25,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our healthcare group is considering",
+          "We are evaluating options for",
+          "We would like to learn more about"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 50,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our management team would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 25,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "analysing patient and appointment trends",
+      "tracking appointment cancellations and no-shows",
+      "comparing performance across clinic locations",
+      "preparing monthly healthcare reports manually",
+      "monitoring clinic revenue and patient volumes"
+    ],
+
+    "message_solutions": [
+      "a healthcare operations dashboard",
+      "an appointment analytics dashboard",
+      "a multi-clinic performance dashboard",
+      "a patient-volume reporting dashboard",
+      "a clinic revenue analytics solution"
+    ]
+  },
+
+  {
+    "persona_id": "DASHBOARD_003",
+    "persona_name": "Logistics Performance Manager",
+    "service": "Data Dashboards",
+    "industry": "Logistics and Transportation",
+
+    "company_size": {
+      "min_employees": 25,
+      "max_employees": 250
+    },
+
+    "decision_makers": [
+      "Logistics Manager",
+      "Operations Director",
+      "Fleet Manager",
+      "General Manager"
+    ],
+
+    "technical_maturity": "Medium",
+
+    "business_challenges": [
+      "Delivery performance is tracked through multiple spreadsheets",
+      "Delayed shipments are difficult to analyse",
+      "Fleet and driver performance is not visible in real time",
+      "Management reports take too long to prepare"
+    ],
+
+    "business_goals": [
+      "Monitor delivery performance",
+      "Track delayed and completed shipments",
+      "Analyse driver and fleet efficiency",
+      "Improve on-time delivery rates",
+      "Automate operational reporting"
+    ],
+
+    "required_features": [
+      "Delivery Performance Dashboard",
+      "Fleet Utilization Tracking",
+      "Driver Performance Analysis",
+      "Shipment Delay Monitoring",
+      "Operational KPI Reporting"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 15000,
+      "max": 40000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Phone Call",
+      "Email",
+      "Microsoft Teams"
+    ],
+
+    "message_styles": [
+      "Direct",
+      "Operational",
+      "Results-focused"
+    ],
+
+    "keywords": [
+      "deliveries",
+      "fleet",
+      "drivers",
+      "shipments",
+      "delays",
+      "logistics",
+      "KPIs"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.55,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "RapidRoute Logistics",
+      "GulfLine Transport",
+      "SwiftCargo UAE",
+      "PrimeMove Logistics",
+      "MetroFleet Services",
+      "ExpressPath Logistics",
+      "DesertLink Delivery"
+    ],
+
+    "sample_contact_names": [
+      "Omar Hassan",
+      "Ahmed Farooq",
+      "Rami Khalid",
+      "Nadia Saeed",
+      "Yousef Malik",
+      "Sara Rahman",
+      "Mariam Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 20,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our logistics company is considering",
+          "We are evaluating options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our operations department would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 35,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "tracking delivery delays across our operations",
+      "measuring driver and fleet performance",
+      "monitoring completed and pending shipments",
+      "preparing logistics reports manually",
+      "analysing on-time delivery performance"
+    ],
+
+    "message_solutions": [
+      "a logistics performance dashboard",
+      "a fleet-utilization analytics dashboard",
+      "a shipment-delay monitoring dashboard",
+      "a driver-performance reporting dashboard",
+      "a centralized logistics KPI dashboard"
+    ]
+  },
+
+  {
+    "persona_id": "DASHBOARD_004",
+    "persona_name": "E-commerce Business Owner",
+    "service": "Data Dashboards",
+    "industry": "E-commerce",
+
+    "company_size": {
+      "min_employees": 5,
+      "max_employees": 80
+    },
+
+    "decision_makers": [
+      "Business Owner",
+      "E-commerce Manager",
+      "Marketing Manager",
+      "Sales Director"
+    ],
+
+    "technical_maturity": "Medium-High",
+
+    "business_challenges": [
+      "Sales and marketing data is spread across different platforms",
+      "Customer acquisition costs are difficult to track",
+      "Product performance reports are prepared manually",
+      "Management lacks a complete view of business performance"
+    ],
+
+    "business_goals": [
+      "Track online sales and revenue",
+      "Monitor marketing campaign performance",
+      "Analyse customer acquisition costs",
+      "Identify best-selling products",
+      "Improve conversion rates"
+    ],
+
+    "required_features": [
+      "E-commerce Sales Dashboard",
+      "Marketing Campaign Analytics",
+      "Customer Acquisition Tracking",
+      "Product Performance Analysis",
+      "Conversion Funnel Monitoring"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 9000,
+      "max": 26000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "WhatsApp",
+      "Video Call"
+    ],
+
+    "message_styles": [
+      "Growth-focused",
+      "Analytical",
+      "Commercial"
+    ],
+
+    "keywords": [
+      "online sales",
+      "marketing",
+      "conversion",
+      "products",
+      "customers",
+      "campaigns",
+      "e-commerce"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.51,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "Dubai Trend Store",
+      "HomeGlow Market",
+      "Everyday Essentials",
+      "TechBasket UAE",
+      "UrbanCart Online",
+      "StyleHub Marketplace",
+      "SmartShop Dubai"
+    ],
+
+    "sample_contact_names": [
+      "Nadia Rahman",
+      "Omar Farooq",
+      "Sara Ahmed",
+      "Rami Khalil",
+      "Mariam Saeed",
+      "Ahmed Hassan",
+      "Yousef Malik"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 25,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our online business is considering",
+          "We are researching options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our e-commerce team would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 30,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "combining sales data from different online platforms",
+      "tracking marketing campaign performance",
+      "analysing customer acquisition costs",
+      "identifying high-performing products",
+      "monitoring our online conversion funnel"
+    ],
+
+    "message_solutions": [
+      "an e-commerce sales dashboard",
+      "a marketing-performance analytics dashboard",
+      "a customer-acquisition reporting dashboard",
+      "a product-performance dashboard",
+      "a conversion-funnel analytics solution"
+    ]
+  },
+
+  {
+    "persona_id": "DASHBOARD_005",
+    "persona_name": "Manufacturing Plant Manager",
+    "service": "Data Dashboards",
+    "industry": "Manufacturing",
+
+    "company_size": {
+      "min_employees": 50,
+      "max_employees": 400
+    },
+
+    "decision_makers": [
+      "Plant Manager",
+      "Production Director",
+      "Operations Manager",
+      "General Manager"
+    ],
+
+    "technical_maturity": "Medium-High",
+
+    "business_challenges": [
+      "Production data is collected manually",
+      "Management cannot monitor output in real time",
+      "Equipment downtime is difficult to analyse",
+      "Quality and efficiency reports take too long to prepare"
+    ],
+
+    "business_goals": [
+      "Monitor production output",
+      "Track equipment downtime",
+      "Analyse operational efficiency",
+      "Improve quality control",
+      "Reduce production delays"
+    ],
+
+    "required_features": [
+      "Production Performance Dashboard",
+      "Equipment Downtime Tracking",
+      "Quality Control Analytics",
+      "Operational Efficiency Monitoring",
+      "Inventory and Output Reporting"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 20000,
+      "max": 55000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "Microsoft Teams"
+    ],
+
+    "message_styles": [
+      "Technical",
+      "Operational",
+      "Data-driven"
+    ],
+
+    "keywords": [
+      "production",
+      "downtime",
+      "manufacturing",
+      "quality",
+      "inventory",
+      "efficiency",
+      "output"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.58,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "GulfTech Manufacturing",
+      "PrimeWorks Industries",
+      "MetroFab Industries",
+      "PrecisionWorks Factory",
+      "Emirates Production Group",
+      "Advanced Manufacturing UAE",
+      "IndustrialEdge Solutions"
+    ],
+
+    "sample_contact_names": [
+      "Ahmed Malik",
+      "Omar Farooq",
+      "Rami Hassan",
+      "Sara Khalid",
+      "Nadia Rahman",
+      "Yousef Saeed",
+      "Mariam Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 15,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our manufacturing company is considering",
+          "We are evaluating options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our production team would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 40,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "monitoring production output in real time",
+      "tracking equipment downtime",
+      "analysing production efficiency",
+      "preparing quality-control reports manually",
+      "monitoring inventory and finished goods"
+    ],
+
+    "message_solutions": [
+      "a manufacturing performance dashboard",
+      "an equipment-downtime analytics dashboard",
+      "a production-efficiency reporting dashboard",
+      "a quality-control monitoring dashboard",
+      "a centralized manufacturing analytics solution"
+    ]
+  }
+]

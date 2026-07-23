@@ -1,0 +1,772 @@
+[
+  {
+    "persona_id": "CHATBOT_001",
+    "persona_name": "Healthcare Clinic Owner",
+    "service": "AI Chatbots",
+    "industry": "Healthcare",
+
+    "company_size": {
+      "min_employees": 10,
+      "max_employees": 30
+    },
+
+    "decision_makers": [
+      "Clinic Owner",
+      "Medical Director",
+      "Clinic Manager"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "High volume of repetitive patient enquiries",
+      "Reception staff are overloaded",
+      "Missed enquiries outside working hours",
+      "Manual appointment-booking process"
+    ],
+
+    "business_goals": [
+      "Reduce receptionist workload",
+      "Provide support outside working hours",
+      "Increase appointment bookings",
+      "Improve patient experience"
+    ],
+
+    "required_features": [
+      "Website Chatbot",
+      "WhatsApp Chatbot",
+      "Appointment Booking",
+      "Frequently Asked Questions",
+      "Lead Capture"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 5000,
+      "max": 12000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month"
+    ],
+
+    "communication_preferences": [
+      "WhatsApp",
+      "Phone Call"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Direct",
+      "Problem-focused"
+    ],
+
+    "keywords": [
+      "clinic",
+      "patient",
+      "appointment",
+      "doctor",
+      "reception",
+      "WhatsApp",
+      "booking"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.45,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "CarePlus Clinic",
+      "Prime Health Clinic",
+      "Wellness Medical Centre",
+      "CityCare Clinic",
+      "New Life Medical Centre",
+      "HealthFirst Clinic",
+      "MedCare Specialists"
+    ],
+
+    "sample_contact_names": [
+      "Dr. Ahmed Khan",
+      "Dr. Sarah Malik",
+      "Aisha Rahman",
+      "Omar Hassan",
+      "Mohammed Ali",
+      "Dr. Fatima Noor",
+      "Dr. Khalid Saeed"
+    ],
+
+   "lead_intents": [
+  {
+    "intent": "Exploring",
+    "weight": 30,
+    "probability_adjustment": -0.15,
+    "message_openings": [
+      "We are exploring",
+      "Our clinic is considering",
+      "We are researching options for",
+      "We would like to learn more about"
+    ]
+  },
+  {
+    "intent": "Interested",
+    "weight": 45,
+    "probability_adjustment": 0.05,
+    "message_openings": [
+      "We are interested in",
+      "We are looking for",
+      "Our clinic would like",
+      "We are planning to implement"
+    ]
+  },
+  {
+    "intent": "Ready to Buy",
+    "weight": 25,
+    "probability_adjustment": 0.20,
+    "message_openings": [
+      "We urgently need",
+      "We are ready to proceed with",
+      "We would like a proposal for",
+      "We are actively looking to purchase"
+    ]
+  }
+],
+
+"message_problems": [
+  "reducing repetitive patient enquiries",
+  "automating appointment bookings",
+  "handling WhatsApp enquiries",
+  "reducing pressure on our reception team",
+  "answering patient questions outside working hours"
+],
+
+"message_solutions": [
+  "an AI chatbot for our website",
+  "a WhatsApp chatbot",
+  "an automated appointment-booking assistant",
+  "a chatbot for patient support",
+  "an AI assistant for our clinic"
+]
+
+    
+  },
+
+  {
+    "persona_id": "CHATBOT_002",
+    "persona_name": "E-commerce Store Owner",
+    "service": "AI Chatbots",
+    "industry": "E-commerce",
+
+    "company_size": {
+      "min_employees": 5,
+      "max_employees": 25
+    },
+
+    "decision_makers": [
+      "Business Owner",
+      "E-commerce Manager",
+      "Customer Experience Manager"
+    ],
+
+    "technical_maturity": "Medium",
+
+    "business_challenges": [
+      "High volume of repetitive product enquiries",
+      "Customers abandon purchases when support is unavailable",
+      "Customer service team is overloaded",
+      "Order-status enquiries are handled manually"
+    ],
+
+    "business_goals": [
+      "Provide instant customer support",
+      "Reduce abandoned purchases",
+      "Increase online sales",
+      "Reduce customer service workload"
+    ],
+
+    "required_features": [
+      "Website Chatbot",
+      "WhatsApp Chatbot",
+      "Product Recommendations",
+      "Order Tracking",
+      "Lead Capture"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 6000,
+      "max": 15000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "WhatsApp",
+      "Phone Call"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Sales-focused",
+      "Results-focused"
+    ],
+
+    "keywords": [
+      "online store",
+      "customers",
+      "orders",
+      "products",
+      "sales",
+      "WhatsApp",
+      "shopping"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.42,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "UrbanCart",
+      "StyleNest",
+      "Dubai Trend Store",
+      "HomeGlow Market",
+      "Little Luxe Boutique",
+      "TechBasket UAE",
+      "Everyday Essentials"
+    ],
+
+    "sample_contact_names": [
+      "Layla Hassan",
+      "Omar Farooq",
+      "Sara Ahmed",
+      "Rami Khalil",
+      "Nadia Rahman",
+      "Yousef Ali",
+      "Mariam Saeed"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 35,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our online store is considering",
+          "We are researching options for",
+          "We would like to learn more about"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our online store would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 20,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "answering repetitive product questions",
+      "reducing abandoned shopping carts",
+      "handling order-status enquiries",
+      "supporting customers outside working hours",
+      "reducing pressure on our customer service team"
+    ],
+
+    "message_solutions": [
+      "an AI chatbot for our online store",
+      "a WhatsApp shopping assistant",
+      "an automated order-tracking chatbot",
+      "a product-recommendation assistant",
+      "an AI customer support chatbot"
+    ]
+  },
+
+  {
+  "persona_id": "CHATBOT_003",
+  "persona_name": "Real Estate Agency Owner",
+  "service": "AI Chatbots",
+  "industry": "Real Estate",
+
+  "company_size": {
+    "min_employees": 10,
+    "max_employees": 60
+  },
+
+  "decision_makers": [
+    "Agency Owner",
+    "Sales Director",
+    "Marketing Manager",
+    "Operations Manager"
+  ],
+
+  "technical_maturity": "Medium",
+
+  "business_challenges": [
+    "Property enquiries arrive outside working hours",
+    "Agents spend too much time answering repetitive questions",
+    "Leads are not assigned quickly enough",
+    "Potential buyers do not receive immediate responses"
+  ],
+
+  "business_goals": [
+    "Respond to property enquiries instantly",
+    "Capture and qualify property leads",
+    "Schedule property viewings",
+    "Improve agent productivity",
+    "Increase lead conversion"
+  ],
+
+  "required_features": [
+    "Website Chatbot",
+    "WhatsApp Chatbot",
+    "Property Search",
+    "Lead Qualification",
+    "Viewing Appointment Booking"
+  ],
+
+  "budget": {
+    "currency": "AED",
+    "min": 7000,
+    "max": 18000
+  },
+
+  "possible_timelines": [
+    "Immediately",
+    "Within 2 weeks",
+    "Within 1 month",
+    "Within 3 months"
+  ],
+
+  "communication_preferences": [
+    "WhatsApp",
+    "Phone Call",
+    "Email"
+  ],
+
+  "message_styles": [
+    "Professional",
+    "Sales-focused",
+    "Urgent"
+  ],
+
+  "keywords": [
+    "property",
+    "buyer",
+    "tenant",
+    "viewing",
+    "agent",
+    "real estate",
+    "WhatsApp"
+  ],
+
+  "urgency_level": "High",
+  "base_conversion_probability": 0.48,
+  "expected_lead_category": "Hot",
+
+  "sample_company_names": [
+    "PrimeKey Properties",
+    "UrbanNest Realty",
+    "Dubai Horizon Real Estate",
+    "PalmGate Properties",
+    "Skyline Homes",
+    "Elite Living Realty",
+    "BlueStone Properties"
+  ],
+
+  "sample_contact_names": [
+    "Ahmed Farooq",
+    "Sara Khalid",
+    "Omar Rahman",
+    "Nadia Hassan",
+    "Yousef Malik",
+    "Layla Saeed",
+    "Rami Ali"
+  ],
+
+  "lead_intents": [
+    {
+      "intent": "Exploring",
+      "weight": 25,
+      "probability_adjustment": -0.15,
+      "message_openings": [
+        "We are exploring",
+        "Our agency is considering",
+        "We are researching options for",
+        "We would like to understand"
+      ]
+    },
+    {
+      "intent": "Interested",
+      "weight": 45,
+      "probability_adjustment": 0.05,
+      "message_openings": [
+        "We are interested in",
+        "We are looking for",
+        "Our agency would like",
+        "We are planning to implement"
+      ]
+    },
+    {
+      "intent": "Ready to Buy",
+      "weight": 30,
+      "probability_adjustment": 0.20,
+      "message_openings": [
+        "We urgently need",
+        "We are ready to proceed with",
+        "We would like a proposal for",
+        "We are actively looking to purchase"
+      ]
+    }
+  ],
+
+  "message_problems": [
+    "responding to property enquiries outside working hours",
+    "qualifying buyers and tenants",
+    "scheduling property viewings",
+    "reducing repetitive enquiries handled by agents",
+    "assigning leads to the right sales agent"
+  ],
+
+  "message_solutions": [
+    "an AI chatbot for our real estate website",
+    "a WhatsApp property assistant",
+    "an automated lead-qualification chatbot",
+    "a property-viewing booking assistant",
+    "an AI assistant for property enquiries"
+  ]
+},
+
+{
+  "persona_id": "CHATBOT_004",
+  "persona_name": "Educational Institute Administrator",
+  "service": "AI Chatbots",
+  "industry": "Education",
+
+  "company_size": {
+    "min_employees": 20,
+    "max_employees": 100
+  },
+
+  "decision_makers": [
+    "School Owner",
+    "School Principal",
+    "Admissions Manager",
+    "Operations Manager"
+  ],
+
+  "technical_maturity": "Low-Medium",
+
+  "business_challenges": [
+    "Admissions teams answer repetitive parent enquiries",
+    "Enquiries are missed outside office hours",
+    "Parents frequently ask about fees and admissions",
+    "School-tour bookings are handled manually"
+  ],
+
+  "business_goals": [
+    "Automate admissions enquiries",
+    "Provide instant information to parents",
+    "Increase school-tour bookings",
+    "Reduce admissions-team workload",
+    "Capture prospective student details"
+  ],
+
+  "required_features": [
+    "Website Chatbot",
+    "WhatsApp Chatbot",
+    "Admissions Enquiry Support",
+    "School Tour Booking",
+    "Lead Capture"
+  ],
+
+  "budget": {
+    "currency": "AED",
+    "min": 5000,
+    "max": 14000
+  },
+
+  "possible_timelines": [
+    "Immediately",
+    "Within 2 weeks",
+    "Within 1 month",
+    "Within 3 months"
+  ],
+
+  "communication_preferences": [
+    "Email",
+    "Phone Call",
+    "WhatsApp"
+  ],
+
+  "message_styles": [
+    "Professional",
+    "Informative",
+    "Parent-focused"
+  ],
+
+  "keywords": [
+    "admissions",
+    "parents",
+    "students",
+    "fees",
+    "school tour",
+    "education",
+    "enrolment"
+  ],
+
+  "urgency_level": "Medium-High",
+  "base_conversion_probability": 0.43,
+  "expected_lead_category": "Warm",
+
+  "sample_company_names": [
+    "Bright Future Academy",
+    "Horizon International School",
+    "Little Scholars Nursery",
+    "Future Minds Institute",
+    "Knowledge Gate Academy",
+    "Smart Steps Learning Centre",
+    "Green Valley School"
+  ],
+
+  "sample_contact_names": [
+    "Fatima Hassan",
+    "Sarah Malik",
+    "Ahmed Rahman",
+    "Nadia Khan",
+    "Omar Saeed",
+    "Layla Ali",
+    "Mariam Farooq"
+  ],
+
+  "lead_intents": [
+    {
+      "intent": "Exploring",
+      "weight": 35,
+      "probability_adjustment": -0.15,
+      "message_openings": [
+        "We are exploring",
+        "Our institute is considering",
+        "We are researching options for",
+        "We would like to learn more about"
+      ]
+    },
+    {
+      "intent": "Interested",
+      "weight": 45,
+      "probability_adjustment": 0.05,
+      "message_openings": [
+        "We are interested in",
+        "We are looking for",
+        "Our institute would like",
+        "We are planning to implement"
+      ]
+    },
+    {
+      "intent": "Ready to Buy",
+      "weight": 20,
+      "probability_adjustment": 0.20,
+      "message_openings": [
+        "We urgently need",
+        "We are ready to proceed with",
+        "We would like a proposal for",
+        "We are actively looking to purchase"
+      ]
+    }
+  ],
+
+  "message_problems": [
+    "answering repetitive admissions enquiries",
+    "responding to parents outside office hours",
+    "automating school-tour bookings",
+    "reducing pressure on our admissions team",
+    "capturing prospective student information"
+  ],
+
+  "message_solutions": [
+    "an admissions chatbot for our website",
+    "a WhatsApp assistant for parent enquiries",
+    "an automated school-tour booking assistant",
+    "an AI chatbot for admissions support",
+    "a student-enquiry chatbot"
+  ]
+},
+
+{
+  "persona_id": "CHATBOT_005",
+  "persona_name": "Restaurant Chain Manager",
+  "service": "AI Chatbots",
+  "industry": "Food and Hospitality",
+
+  "company_size": {
+    "min_employees": 20,
+    "max_employees": 120
+  },
+
+  "decision_makers": [
+    "Restaurant Owner",
+    "General Manager",
+    "Operations Manager",
+    "Marketing Manager"
+  ],
+
+  "technical_maturity": "Medium",
+
+  "business_challenges": [
+    "Staff handle repetitive reservation enquiries",
+    "Customers ask about menus and opening hours",
+    "Reservation requests arrive through multiple channels",
+    "Customer enquiries are missed during busy periods"
+  ],
+
+  "business_goals": [
+    "Automate table reservations",
+    "Provide instant menu information",
+    "Reduce staff workload",
+    "Improve customer response times",
+    "Promote offers and events"
+  ],
+
+  "required_features": [
+    "Website Chatbot",
+    "WhatsApp Chatbot",
+    "Table Reservation",
+    "Menu Enquiries",
+    "Customer Feedback"
+  ],
+
+  "budget": {
+    "currency": "AED",
+    "min": 5000,
+    "max": 13000
+  },
+
+  "possible_timelines": [
+    "Immediately",
+    "Within 2 weeks",
+    "Within 1 month",
+    "Within 3 months"
+  ],
+
+  "communication_preferences": [
+    "WhatsApp",
+    "Phone Call",
+    "Email"
+  ],
+
+  "message_styles": [
+    "Friendly",
+    "Customer-focused",
+    "Direct"
+  ],
+
+  "keywords": [
+    "restaurant",
+    "reservation",
+    "table",
+    "menu",
+    "customers",
+    "booking",
+    "WhatsApp"
+  ],
+
+  "urgency_level": "Medium-High",
+  "base_conversion_probability": 0.41,
+  "expected_lead_category": "Warm",
+
+  "sample_company_names": [
+    "Urban Spice Kitchen",
+    "The Olive Table",
+    "Palm Bistro Group",
+    "Flame and Fork",
+    "Taste District",
+    "Saffron Lounge",
+    "Dubai Dining Collective"
+  ],
+
+  "sample_contact_names": [
+    "Rami Hassan",
+    "Nadia Malik",
+    "Omar Khalid",
+    "Sara Rahman",
+    "Yousef Ali",
+    "Mariam Saeed",
+    "Ahmed Farooq"
+  ],
+
+  "lead_intents": [
+    {
+      "intent": "Exploring",
+      "weight": 35,
+      "probability_adjustment": -0.15,
+      "message_openings": [
+        "We are exploring",
+        "Our restaurant group is considering",
+        "We are researching options for",
+        "We would like to learn more about"
+      ]
+    },
+    {
+      "intent": "Interested",
+      "weight": 45,
+      "probability_adjustment": 0.05,
+      "message_openings": [
+        "We are interested in",
+        "We are looking for",
+        "Our restaurant group would like",
+        "We are planning to implement"
+      ]
+    },
+    {
+      "intent": "Ready to Buy",
+      "weight": 20,
+      "probability_adjustment": 0.20,
+      "message_openings": [
+        "We urgently need",
+        "We are ready to proceed with",
+        "We would like a proposal for",
+        "We are actively looking to purchase"
+      ]
+    }
+  ],
+
+  "message_problems": [
+    "handling table-reservation enquiries",
+    "answering questions about our menu",
+    "responding to customers during busy periods",
+    "managing enquiries across several branches",
+    "reducing repetitive work for restaurant staff"
+  ],
+
+  "message_solutions": [
+    "a restaurant reservation chatbot",
+    "a WhatsApp assistant for customer enquiries",
+    "an automated table-booking assistant",
+    "an AI chatbot for our restaurant website",
+    "a customer-support chatbot for our branches"
+  ]
+}
+]  

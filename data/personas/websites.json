@@ -1,0 +1,776 @@
+[
+  {
+    "persona_id": "WEBSITE_001",
+    "persona_name": "Professional Services Firm Owner",
+    "service": "Website Development",
+    "industry": "Professional Services",
+
+    "company_size": {
+      "min_employees": 3,
+      "max_employees": 50
+    },
+
+    "decision_makers": [
+      "Business Owner",
+      "Managing Partner",
+      "Marketing Manager",
+      "Operations Manager"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "The existing website looks outdated",
+      "Potential clients cannot clearly understand the services offered",
+      "The website generates very few enquiries",
+      "Staff cannot update website content easily"
+    ],
+
+    "business_goals": [
+      "Build a professional online presence",
+      "Generate more client enquiries",
+      "Present services clearly",
+      "Improve credibility",
+      "Make website content easier to manage"
+    ],
+
+    "required_features": [
+      "Responsive Business Website",
+      "Service Pages",
+      "Lead Enquiry Form",
+      "Content Management System",
+      "Search Engine Optimization Setup"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 6000,
+      "max": 18000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "WhatsApp"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Credibility-focused",
+      "Growth-oriented"
+    ],
+
+    "keywords": [
+      "business website",
+      "professional",
+      "services",
+      "enquiries",
+      "responsive",
+      "SEO",
+      "redesign"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.47,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "Prime Advisory Group",
+      "ClearPath Consultants",
+      "Nexa Business Services",
+      "TrustedEdge Advisory",
+      "Summit Professional Services",
+      "Insight Partners UAE",
+      "CoreValue Consultancy"
+    ],
+
+    "sample_contact_names": [
+      "Ahmed Rahman",
+      "Sara Malik",
+      "Omar Hassan",
+      "Nadia Farooq",
+      "Mariam Saeed",
+      "Yousef Khalid",
+      "Rami Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 30,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our firm is considering",
+          "We are researching options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our firm would like",
+          "We are planning to develop"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 25,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to develop"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "replacing our outdated company website",
+      "presenting our professional services more clearly",
+      "generating more client enquiries online",
+      "making the website mobile-friendly",
+      "allowing our team to update website content"
+    ],
+
+    "message_solutions": [
+      "a professional business website",
+      "a complete website redesign",
+      "a responsive service-based website",
+      "a lead-generation website",
+      "a modern company website with a content-management system"
+    ]
+  },
+
+  {
+    "persona_id": "WEBSITE_002",
+    "persona_name": "Restaurant and Cafe Owner",
+    "service": "Website Development",
+    "industry": "Food and Hospitality",
+
+    "company_size": {
+      "min_employees": 10,
+      "max_employees": 120
+    },
+
+    "decision_makers": [
+      "Restaurant Owner",
+      "General Manager",
+      "Marketing Manager",
+      "Operations Manager"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "Customers cannot easily view the menu online",
+      "Reservations are handled through calls and messages",
+      "The restaurant depends heavily on social media",
+      "Information about branches and opening hours is inconsistent"
+    ],
+
+    "business_goals": [
+      "Showcase the restaurant and menu",
+      "Accept online reservation requests",
+      "Promote offers and events",
+      "Provide accurate branch information",
+      "Improve local online visibility"
+    ],
+
+    "required_features": [
+      "Digital Menu",
+      "Table Reservation Form",
+      "Branch Location Pages",
+      "Photo Gallery",
+      "Local SEO Setup"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 5000,
+      "max": 16000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "WhatsApp",
+      "Phone Call",
+      "Email"
+    ],
+
+    "message_styles": [
+      "Friendly",
+      "Visual",
+      "Customer-focused"
+    ],
+
+    "keywords": [
+      "restaurant",
+      "menu",
+      "reservations",
+      "branches",
+      "gallery",
+      "customers",
+      "website"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.43,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "The Olive Table",
+      "Urban Spice Kitchen",
+      "Palm Bistro Group",
+      "Taste District",
+      "Saffron Lounge",
+      "Flame and Fork",
+      "Dubai Dining Collective"
+    ],
+
+    "sample_contact_names": [
+      "Rami Hassan",
+      "Nadia Malik",
+      "Omar Khalid",
+      "Sara Rahman",
+      "Yousef Ali",
+      "Mariam Saeed",
+      "Ahmed Farooq"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 35,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our restaurant is considering",
+          "We are researching options for",
+          "We would like to learn more about"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our restaurant would like",
+          "We are planning to develop"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 20,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to develop"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "displaying our restaurant menu online",
+      "handling reservation requests manually",
+      "providing correct information for all branches",
+      "promoting seasonal offers and events",
+      "reducing our dependence on social media"
+    ],
+
+    "message_solutions": [
+      "a modern restaurant website",
+      "a restaurant website with a digital menu",
+      "a table-reservation website",
+      "a multi-branch restaurant website",
+      "a mobile-friendly hospitality website"
+    ]
+  },
+
+  {
+    "persona_id": "WEBSITE_003",
+    "persona_name": "Real Estate Agency Director",
+    "service": "Website Development",
+    "industry": "Real Estate",
+
+    "company_size": {
+      "min_employees": 8,
+      "max_employees": 100
+    },
+
+    "decision_makers": [
+      "Agency Owner",
+      "Managing Director",
+      "Sales Director",
+      "Marketing Manager"
+    ],
+
+    "technical_maturity": "Medium",
+
+    "business_challenges": [
+      "Property listings are difficult to update",
+      "The current website does not generate enough leads",
+      "Buyers cannot filter properties effectively",
+      "Agents rely heavily on third-party property portals"
+    ],
+
+    "business_goals": [
+      "Display property listings professionally",
+      "Generate direct buyer and tenant enquiries",
+      "Reduce dependence on third-party portals",
+      "Promote agents and communities",
+      "Improve property-search experience"
+    ],
+
+    "required_features": [
+      "Property Listing Management",
+      "Advanced Property Search",
+      "Lead Enquiry Forms",
+      "Agent Profile Pages",
+      "Property Detail Pages"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 12000,
+      "max": 35000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Phone Call",
+      "WhatsApp",
+      "Email"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Sales-focused",
+      "Urgent"
+    ],
+
+    "keywords": [
+      "properties",
+      "listings",
+      "buyers",
+      "tenants",
+      "agents",
+      "search",
+      "real estate"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.54,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "PrimeKey Properties",
+      "UrbanNest Realty",
+      "Dubai Horizon Real Estate",
+      "PalmGate Properties",
+      "Skyline Homes",
+      "Elite Living Realty",
+      "BlueStone Properties"
+    ],
+
+    "sample_contact_names": [
+      "Ahmed Farooq",
+      "Sara Khalid",
+      "Omar Rahman",
+      "Nadia Hassan",
+      "Yousef Malik",
+      "Layla Saeed",
+      "Rami Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 20,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our real estate agency is considering",
+          "We are evaluating options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our agency would like",
+          "We are planning to develop"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 35,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to develop"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "managing and updating property listings",
+      "generating direct property enquiries",
+      "helping buyers filter suitable properties",
+      "showcasing our agents and communities",
+      "reducing reliance on third-party property portals"
+    ],
+
+    "message_solutions": [
+      "a real estate listing website",
+      "a property-search website",
+      "a lead-generation website for our agency",
+      "a real estate website with listing management",
+      "a responsive property marketplace website"
+    ]
+  },
+
+  {
+    "persona_id": "WEBSITE_004",
+    "persona_name": "Healthcare Clinic Owner",
+    "service": "Website Development",
+    "industry": "Healthcare",
+
+    "company_size": {
+      "min_employees": 5,
+      "max_employees": 80
+    },
+
+    "decision_makers": [
+      "Clinic Owner",
+      "Medical Director",
+      "Clinic Manager",
+      "Marketing Manager"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "The clinic website is outdated or missing",
+      "Patients cannot easily find information about doctors and services",
+      "Appointment requests are handled manually",
+      "The clinic has limited visibility in local search results"
+    ],
+
+    "business_goals": [
+      "Build trust with potential patients",
+      "Present doctors and medical services",
+      "Accept appointment enquiries online",
+      "Improve local search visibility",
+      "Provide accurate clinic information"
+    ],
+
+    "required_features": [
+      "Doctor Profile Pages",
+      "Medical Service Pages",
+      "Appointment Request Form",
+      "Clinic Location and Contact Information",
+      "Local SEO Setup"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 7000,
+      "max": 22000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Phone Call",
+      "Email",
+      "WhatsApp"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Trust-focused",
+      "Informative"
+    ],
+
+    "keywords": [
+      "clinic",
+      "doctors",
+      "patients",
+      "appointments",
+      "medical services",
+      "healthcare",
+      "website"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.49,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "HealthFirst Clinic",
+      "Prime Health Clinic",
+      "New Life Medical Centre",
+      "MedCare Specialists",
+      "Wellness Medical Centre",
+      "CarePlus Clinic",
+      "CityHealth Medical Centre"
+    ],
+
+    "sample_contact_names": [
+      "Dr. Ahmed Khan",
+      "Dr. Sarah Malik",
+      "Dr. Fatima Noor",
+      "Mohammed Ali",
+      "Aisha Rahman",
+      "Omar Hassan",
+      "Mariam Saeed"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 30,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our clinic is considering",
+          "We are researching options for",
+          "We would like to learn more about"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 50,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our clinic would like",
+          "We are planning to develop"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 20,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to develop"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "replacing our outdated clinic website",
+      "displaying information about doctors and treatments",
+      "collecting appointment requests online",
+      "improving our clinic's local search presence",
+      "providing patients with accurate service information"
+    ],
+
+    "message_solutions": [
+      "a professional healthcare website",
+      "a clinic website with appointment enquiries",
+      "a medical website with doctor profiles",
+      "a responsive website for our clinic",
+      "a patient-friendly healthcare website"
+    ]
+  },
+
+  {
+    "persona_id": "WEBSITE_005",
+    "persona_name": "E-commerce Startup Founder",
+    "service": "Website Development",
+    "industry": "E-commerce",
+
+    "company_size": {
+      "min_employees": 2,
+      "max_employees": 40
+    },
+
+    "decision_makers": [
+      "Startup Founder",
+      "Business Owner",
+      "E-commerce Manager",
+      "Marketing Manager"
+    ],
+
+    "technical_maturity": "Medium-High",
+
+    "business_challenges": [
+      "The business does not have a complete online store",
+      "The current website cannot process online payments",
+      "Managing products and orders is difficult",
+      "Customers abandon purchases because of a poor mobile experience"
+    ],
+
+    "business_goals": [
+      "Launch a complete online store",
+      "Accept secure online payments",
+      "Manage products and orders efficiently",
+      "Increase online sales",
+      "Provide a smooth mobile shopping experience"
+    ],
+
+    "required_features": [
+      "Product Catalogue",
+      "Shopping Cart",
+      "Online Payment Integration",
+      "Order Management",
+      "Customer Account System"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 12000,
+      "max": 40000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "WhatsApp",
+      "Video Call"
+    ],
+
+    "message_styles": [
+      "Growth-focused",
+      "Commercial",
+      "Urgent"
+    ],
+
+    "keywords": [
+      "online store",
+      "products",
+      "payments",
+      "orders",
+      "shopping cart",
+      "customers",
+      "e-commerce"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.57,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "Dubai Trend Store",
+      "HomeGlow Market",
+      "Everyday Essentials",
+      "TechBasket UAE",
+      "UrbanCart Online",
+      "StyleHub Marketplace",
+      "SmartShop Dubai"
+    ],
+
+    "sample_contact_names": [
+      "Nadia Rahman",
+      "Omar Farooq",
+      "Sara Ahmed",
+      "Rami Khalil",
+      "Mariam Saeed",
+      "Ahmed Hassan",
+      "Yousef Malik"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 15,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our startup is considering",
+          "We are evaluating options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our e-commerce business would like",
+          "We are planning to launch"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 40,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to launch"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "launching our products through a complete online store",
+      "accepting secure online payments",
+      "managing products and customer orders",
+      "improving the mobile shopping experience",
+      "reducing abandoned purchases"
+    ],
+
+    "message_solutions": [
+      "a complete e-commerce website",
+      "an online store with payment integration",
+      "a mobile-friendly shopping website",
+      "an e-commerce platform with order management",
+      "a product-based website with a secure checkout"
+    ]
+  }
+]

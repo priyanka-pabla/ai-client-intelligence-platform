@@ -1,0 +1,776 @@
+[
+  {
+    "persona_id": "AUTOMATION_001",
+    "persona_name": "Accounting Firm Owner",
+    "service": "Business Automation",
+    "industry": "Accounting and Finance",
+
+    "company_size": {
+      "min_employees": 5,
+      "max_employees": 50
+    },
+
+    "decision_makers": [
+      "Firm Owner",
+      "Managing Partner",
+      "Finance Director",
+      "Operations Manager"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "Staff manually process invoices and receipts",
+      "Client documents are collected through multiple channels",
+      "Monthly reporting takes too much time",
+      "Payment reminders are sent manually"
+    ],
+
+    "business_goals": [
+      "Automate invoice and receipt processing",
+      "Improve client onboarding",
+      "Reduce manual data entry",
+      "Automate payment reminders",
+      "Improve reporting accuracy"
+    ],
+
+    "required_features": [
+      "Invoice Processing Automation",
+      "Document Collection Workflow",
+      "Payment Reminder Automation",
+      "Client Onboarding Workflow",
+      "Accounting Software Integration"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 7000,
+      "max": 18000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "WhatsApp"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Detail-oriented",
+      "Efficiency-focused"
+    ],
+
+    "keywords": [
+      "invoices",
+      "receipts",
+      "accounting",
+      "documents",
+      "payment reminders",
+      "data entry",
+      "workflow"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.46,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "PrimeLedger Accounting",
+      "ClearBooks Advisory",
+      "BalancePoint Consultants",
+      "Trusted Accounts UAE",
+      "FinEdge Accounting Services",
+      "Accurate Ledger Partners",
+      "SmartBooks Consultancy"
+    ],
+
+    "sample_contact_names": [
+      "Ahmed Khan",
+      "Sara Malik",
+      "Omar Farooq",
+      "Nadia Hassan",
+      "Yousef Rahman",
+      "Mariam Ali",
+      "Rami Saeed"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 30,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our accounting firm is considering",
+          "We are researching options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our firm would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 25,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "processing invoices and receipts manually",
+      "collecting client documents through multiple channels",
+      "sending payment reminders manually",
+      "entering financial information into different systems",
+      "preparing recurring client reports"
+    ],
+
+    "message_solutions": [
+      "an automated invoice-processing workflow",
+      "a client document collection system",
+      "an automated payment-reminder workflow",
+      "a financial data-entry automation solution",
+      "an accounting workflow automation system"
+    ]
+  },
+
+  {
+    "persona_id": "AUTOMATION_002",
+    "persona_name": "HR Consultancy Owner",
+    "service": "Business Automation",
+    "industry": "Human Resources",
+
+    "company_size": {
+      "min_employees": 5,
+      "max_employees": 60
+    },
+
+    "decision_makers": [
+      "Consultancy Owner",
+      "HR Director",
+      "Recruitment Manager",
+      "Operations Manager"
+    ],
+
+    "technical_maturity": "Medium",
+
+    "business_challenges": [
+      "Recruiters manually screen large numbers of CVs",
+      "Interview scheduling requires repeated coordination",
+      "Candidate information is spread across multiple files",
+      "Client and candidate follow-ups are performed manually"
+    ],
+
+    "business_goals": [
+      "Automate candidate screening",
+      "Reduce interview-scheduling time",
+      "Centralize candidate information",
+      "Improve recruiter productivity",
+      "Automate follow-up communication"
+    ],
+
+    "required_features": [
+      "CV Screening Automation",
+      "Interview Scheduling",
+      "Candidate Tracking Workflow",
+      "Automated Email Follow-ups",
+      "CRM Integration"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 8000,
+      "max": 22000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "Microsoft Teams"
+    ],
+
+    "message_styles": [
+      "Professional",
+      "Process-focused",
+      "Growth-oriented"
+    ],
+
+    "keywords": [
+      "recruitment",
+      "CV screening",
+      "candidates",
+      "interviews",
+      "follow-ups",
+      "onboarding",
+      "HR workflow"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.49,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "TalentBridge Consultancy",
+      "PeopleFirst HR",
+      "CareerLink Recruitment",
+      "NextHire Solutions",
+      "Workforce Partners UAE",
+      "TalentSphere Consulting",
+      "HumanEdge Recruitment"
+    ],
+
+    "sample_contact_names": [
+      "Fatima Rahman",
+      "Ahmed Saeed",
+      "Sara Khalid",
+      "Omar Malik",
+      "Nadia Farooq",
+      "Mariam Hassan",
+      "Yousef Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 25,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our HR consultancy is considering",
+          "We are researching options for",
+          "We would like to learn more about"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our consultancy would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 30,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "screening large volumes of CVs manually",
+      "coordinating interview schedules",
+      "tracking candidates across multiple spreadsheets",
+      "sending repeated candidate follow-ups",
+      "managing employee onboarding documents"
+    ],
+
+    "message_solutions": [
+      "an automated CV-screening workflow",
+      "an interview-scheduling automation system",
+      "a candidate tracking workflow",
+      "an automated recruitment follow-up system",
+      "an employee onboarding automation solution"
+    ]
+  },
+
+  {
+    "persona_id": "AUTOMATION_003",
+    "persona_name": "Logistics Company Manager",
+    "service": "Business Automation",
+    "industry": "Logistics and Transportation",
+
+    "company_size": {
+      "min_employees": 20,
+      "max_employees": 150
+    },
+
+    "decision_makers": [
+      "General Manager",
+      "Operations Director",
+      "Logistics Manager",
+      "Fleet Manager"
+    ],
+
+    "technical_maturity": "Medium",
+
+    "business_challenges": [
+      "Delivery assignments are managed manually",
+      "Customers repeatedly request shipment updates",
+      "Drivers submit delivery information through different channels",
+      "Dispatch teams spend too much time coordinating deliveries"
+    ],
+
+    "business_goals": [
+      "Automate delivery assignments",
+      "Improve shipment communication",
+      "Reduce dispatch workload",
+      "Centralize driver updates",
+      "Improve delivery efficiency"
+    ],
+
+    "required_features": [
+      "Delivery Assignment Automation",
+      "Shipment Notification Workflow",
+      "Driver Update Collection",
+      "Dispatch Management Integration",
+      "Automated Customer Alerts"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 12000,
+      "max": 35000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Phone Call",
+      "Email",
+      "WhatsApp"
+    ],
+
+    "message_styles": [
+      "Direct",
+      "Operational",
+      "Urgent"
+    ],
+
+    "keywords": [
+      "delivery",
+      "shipment",
+      "dispatch",
+      "drivers",
+      "tracking",
+      "fleet",
+      "notifications"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.53,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "RapidRoute Logistics",
+      "GulfLine Transport",
+      "SwiftCargo UAE",
+      "PrimeMove Logistics",
+      "DesertLink Delivery",
+      "MetroFleet Services",
+      "ExpressPath Logistics"
+    ],
+
+    "sample_contact_names": [
+      "Omar Hassan",
+      "Ahmed Farooq",
+      "Rami Khalid",
+      "Nadia Saeed",
+      "Yousef Malik",
+      "Sara Rahman",
+      "Mariam Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 20,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our logistics company is considering",
+          "We are evaluating options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our operations team would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 35,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "assigning deliveries to drivers manually",
+      "sending shipment updates to customers",
+      "collecting driver status updates",
+      "coordinating dispatch operations",
+      "managing delayed-delivery notifications"
+    ],
+
+    "message_solutions": [
+      "an automated delivery-assignment workflow",
+      "a shipment notification automation system",
+      "a driver update collection workflow",
+      "an automated dispatch-management solution",
+      "a customer delivery-alert system"
+    ]
+  },
+
+  {
+    "persona_id": "AUTOMATION_004",
+    "persona_name": "Cleaning Company Owner",
+    "service": "Business Automation",
+    "industry": "Cleaning and Facility Services",
+
+    "company_size": {
+      "min_employees": 10,
+      "max_employees": 100
+    },
+
+    "decision_makers": [
+      "Business Owner",
+      "General Manager",
+      "Operations Manager",
+      "Scheduling Coordinator"
+    ],
+
+    "technical_maturity": "Low-Medium",
+
+    "business_challenges": [
+      "Bookings are recorded manually",
+      "Staff schedules frequently change",
+      "Customers need repeated appointment confirmations",
+      "Invoices and payment reminders are managed manually"
+    ],
+
+    "business_goals": [
+      "Automate service bookings",
+      "Improve staff scheduling",
+      "Reduce missed appointments",
+      "Automate customer reminders",
+      "Simplify invoicing"
+    ],
+
+    "required_features": [
+      "Booking Automation",
+      "Staff Scheduling Workflow",
+      "Appointment Reminders",
+      "Invoice Generation",
+      "Payment Reminder Automation"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 6000,
+      "max": 16000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "WhatsApp",
+      "Phone Call",
+      "Email"
+    ],
+
+    "message_styles": [
+      "Practical",
+      "Direct",
+      "Cost-conscious"
+    ],
+
+    "keywords": [
+      "bookings",
+      "cleaners",
+      "staff scheduling",
+      "appointments",
+      "invoices",
+      "reminders",
+      "customers"
+    ],
+
+    "urgency_level": "Medium-High",
+    "base_conversion_probability": 0.44,
+    "expected_lead_category": "Warm",
+
+    "sample_company_names": [
+      "SparkleCare Cleaning",
+      "FreshSpace Services",
+      "BrightHome Cleaning",
+      "CleanPro UAE",
+      "PerfectTouch Services",
+      "UrbanClean Solutions",
+      "ShineWorks Cleaning"
+    ],
+
+    "sample_contact_names": [
+      "Sara Ahmed",
+      "Omar Khalid",
+      "Nadia Hassan",
+      "Ahmed Rahman",
+      "Mariam Saeed",
+      "Yousef Ali",
+      "Rami Farooq"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 35,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our cleaning company is considering",
+          "We are researching options for",
+          "We would like to know more about"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our company would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 20,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "managing customer bookings manually",
+      "assigning cleaners to appointments",
+      "sending appointment confirmations",
+      "creating invoices after each service",
+      "following up on pending payments"
+    ],
+
+    "message_solutions": [
+      "an automated cleaning-service booking system",
+      "a staff-scheduling automation workflow",
+      "an appointment reminder system",
+      "an automated invoicing workflow",
+      "a payment follow-up automation solution"
+    ]
+  },
+
+  {
+    "persona_id": "AUTOMATION_005",
+    "persona_name": "Manufacturing Operations Manager",
+    "service": "Business Automation",
+    "industry": "Manufacturing",
+
+    "company_size": {
+      "min_employees": 50,
+      "max_employees": 300
+    },
+
+    "decision_makers": [
+      "Operations Manager",
+      "Plant Manager",
+      "Production Director",
+      "General Manager"
+    ],
+
+    "technical_maturity": "Medium-High",
+
+    "business_challenges": [
+      "Production updates are collected manually",
+      "Purchase approvals take too long",
+      "Inventory information is spread across different systems",
+      "Maintenance requests are not tracked efficiently"
+    ],
+
+    "business_goals": [
+      "Automate production reporting",
+      "Speed up purchase approvals",
+      "Improve inventory visibility",
+      "Track maintenance requests",
+      "Reduce operational delays"
+    ],
+
+    "required_features": [
+      "Production Reporting Automation",
+      "Purchase Approval Workflow",
+      "Inventory Update Integration",
+      "Maintenance Request Tracking",
+      "Operational Alert System"
+    ],
+
+    "budget": {
+      "currency": "AED",
+      "min": 18000,
+      "max": 50000
+    },
+
+    "possible_timelines": [
+      "Immediately",
+      "Within 2 weeks",
+      "Within 1 month",
+      "Within 3 months"
+    ],
+
+    "communication_preferences": [
+      "Email",
+      "Phone Call",
+      "Microsoft Teams"
+    ],
+
+    "message_styles": [
+      "Technical",
+      "Operational",
+      "Results-focused"
+    ],
+
+    "keywords": [
+      "production",
+      "manufacturing",
+      "inventory",
+      "approvals",
+      "maintenance",
+      "operations",
+      "reporting"
+    ],
+
+    "urgency_level": "High",
+    "base_conversion_probability": 0.56,
+    "expected_lead_category": "Hot",
+
+    "sample_company_names": [
+      "GulfTech Manufacturing",
+      "PrimeWorks Industries",
+      "Emirates Production Group",
+      "MetroFab Industries",
+      "Advanced Manufacturing UAE",
+      "PrecisionWorks Factory",
+      "IndustrialEdge Solutions"
+    ],
+
+    "sample_contact_names": [
+      "Ahmed Malik",
+      "Omar Farooq",
+      "Rami Hassan",
+      "Sara Khalid",
+      "Nadia Rahman",
+      "Yousef Saeed",
+      "Mariam Ali"
+    ],
+
+    "lead_intents": [
+      {
+        "intent": "Exploring",
+        "weight": 20,
+        "probability_adjustment": -0.15,
+        "message_openings": [
+          "We are exploring",
+          "Our manufacturing company is considering",
+          "We are evaluating options for",
+          "We would like to understand"
+        ]
+      },
+      {
+        "intent": "Interested",
+        "weight": 45,
+        "probability_adjustment": 0.05,
+        "message_openings": [
+          "We are interested in",
+          "We are looking for",
+          "Our operations team would like",
+          "We are planning to implement"
+        ]
+      },
+      {
+        "intent": "Ready to Buy",
+        "weight": 35,
+        "probability_adjustment": 0.20,
+        "message_openings": [
+          "We urgently need",
+          "We are ready to proceed with",
+          "We would like a proposal for",
+          "We are actively looking to purchase"
+        ]
+      }
+    ],
+
+    "message_problems": [
+      "collecting production updates manually",
+      "managing purchase approvals through email",
+      "updating inventory information across systems",
+      "tracking equipment-maintenance requests",
+      "preparing recurring operational reports"
+    ],
+
+    "message_solutions": [
+      "an automated production-reporting workflow",
+      "a digital purchase-approval system",
+      "an inventory update automation solution",
+      "a maintenance-request tracking workflow",
+      "an operational reporting automation system"
+    ]
+  }
+]
