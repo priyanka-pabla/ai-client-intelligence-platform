@@ -182,7 +182,7 @@ Two supervised Machine Learning algorithms were trained and evaluated.
 * Captures feature interactions
 * Improved predictive capability
 
-📊 Model Performance
+## 📊 Model Performance
 
 Two supervised machine learning models were trained and evaluated using the synthetic CRM dataset.
 
