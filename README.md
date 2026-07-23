@@ -182,6 +182,21 @@ Two supervised Machine Learning algorithms were trained and evaluated.
 * Captures feature interactions
 * Improved predictive capability
 
+📊 Model Performance
+
+Two supervised machine learning models were trained and evaluated using the synthetic CRM dataset.
+
+| Model               | Accuracy |
+| ------------------- | -------: |
+| Logistic Regression |  **65%** |
+| Random Forest       |  **60%** |
+
+The models were evaluated using standard classification metrics, including accuracy, precision, recall, and F1-score.
+
+**Logistic Regression** achieved the highest overall accuracy on the synthetic dataset and was selected for deployment within the Streamlit application.
+
+> **Note:** The primary objective of this project was to demonstrate a complete end-to-end machine learning workflow—from buyer persona engineering and synthetic data generation to model training, evaluation, deployment, and real-time inference. Future improvements include training on larger and real-world CRM datasets to further improve predictive performance.
+
 ---
 
 ## Step 5 — Model Evaluation
