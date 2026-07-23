@@ -593,20 +593,13 @@ if admin_mode:
         ]
 
         if missing_columns:
-            leads_df.to_csv(
-                "data/leads_v1_backup.csv",
-                index=False
+            st.error(
+            "The current leads.csv file uses the old schema. "
+            "Please update the CSV before opening the dashboard."
             )
+            st.stop()
 
-            leads_df = pd.DataFrame(
-                columns=version_2_columns
-            )
 
-            leads_df.to_csv(
-                "data/leads.csv",
-                index=False
-            )
-        
         if leads_df.empty:
             st.info("No leads available yet.")
 
