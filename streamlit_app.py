@@ -572,7 +572,11 @@ if admin_mode:
             "Conversion Probability": 0.0,
             "Conversion Percentage": 0.0,
             "Lead Score": "Cold Lead",
-            "Lead Status": "New"
+            "Lead Status": "New",
+            "Budget": None,
+            "Industry": "Not Provided",
+            "Company Size": 0,
+            "Timeline": "Not Provided"
         }
 
         for column, default_value in required_columns.items():
