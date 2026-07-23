@@ -610,12 +610,17 @@ if admin_mode:
         if leads_df.empty:
             st.info("No leads available yet.")
 
-        leads_df["Submitted DateTime"] = leads_df["Submitted At"].apply(parse_submitted_at)
+        else:
+            leads_df["Submitted DateTime"] = pd.to_datetime(
+                leads_df["Submitted At"],
+                errors="coerce"
+            )
 
-        leads_df["Submitted At"] = leads_df["Submitted DateTime"].dt.strftime(
-            "%d-%m-%Y %I:%M %p"
-        )
+            leads_df["Submitted At"] = leads_df["Submitted DateTime"].dt.strftime(
+                "%d-%m-%Y %I:%M %p"
+            )
 
+        leads_df["Submitted At"] = leads_df["Submitted At"].fillna("Date unavailable")
         # leads_df["Lead Score"] = leads_df.apply(
         #     lambda row: calculate_lead_score(
         #         row["Message"],
