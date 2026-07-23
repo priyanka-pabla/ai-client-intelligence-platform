@@ -566,6 +566,19 @@ if admin_mode:
     try:
         leads_df = pd.read_csv("data/leads.csv")
 
+        # Ensure Version 2 columns exist
+        required_columns = {
+            "Predicted Conversion": 0,
+            "Conversion Probability": 0.0,
+            "Conversion Percentage": 0.0,
+            "Lead Score": "Cold Lead",
+            "Lead Status": "New"
+        }
+
+        for column, default_value in required_columns.items():
+            if column not in leads_df.columns:
+                leads_df[column] = default_value
+
         leads_df["Submitted DateTime"] = leads_df["Submitted At"].apply(parse_submitted_at)
 
         leads_df["Submitted At"] = leads_df["Submitted DateTime"].dt.strftime(
